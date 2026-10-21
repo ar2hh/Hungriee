@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us — Hungriee | Get In Touch</title>
+
+    <meta name="description" content="Contact Hungriee for support, feedback, or partnership inquiries. We'd love to hear from you!">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=20261014-location-style-1">
+
+    <link rel="stylesheet" href="pages.css">
+
+</head>
+
+<body>
+
+    <div id="preloader">
+
+        <div class="loader">
+
+            <div class="loader-core">
+
+                <img src="images/hungriee-mark.svg" alt="">
+
+            </div>
+
+            <span class="loader-wordmark">Hungr<span>iee</span></span>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <nav class="navbar scrolled" id="navbar">
+
+        <div class="container nav-container">
+
+            <a href="/" class="nav-logo"><img class="logo-icon" src="images/hungriee-mark.svg" alt=""><span class="logo-text">Hungr<span class="accent">iee</span></span></a>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="/" class="nav-link">Home</a></li>
+
+                <li><a href="/menu" class="nav-link">Menu</a></li>
+
+                <li><a href="/contact" class="nav-link active">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-right">
+
+                <span class="location-summary" id="locationSummary" aria-live="polite"></span>
+
+                <button class="location-btn" id="locationBtn" type="button" aria-label="Enter delivery pincode" aria-controls="deliveryLocationDialog">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+
+                        <circle cx="12" cy="10" r="2.5"/>
+
+                    </svg>
+
+                </button>
+
+                <button class="cart-btn" id="cartBtn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count" id="cartCount">0</span></button>
+
+                <button class="order-btn">Order Now</button>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <dialog class="delivery-location-dialog" id="deliveryLocationDialog">
+
+        <div class="delivery-location-dialog-header">
+
+            <div>
+
+                <span class="delivery-location-eyebrow">Delivery location</span>
+
+                <span class="delivery-location-current" id="currentDeliveryLocation">No location selected</span>
+
+            </div>
+
+        </div>
+
+        <form class="delivery-location-form" id="deliveryLocationForm">
+
+            <div class="delivery-location-controls">
+
+                <input id="deliveryPin" name="pinCode" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="6" pattern="[0-9]{6}" placeholder="6-digit PIN code" required>
+
+                <button class="delivery-check-btn" type="submit">Save</button>
+
+            </div>
+
+            <p class="delivery-location-status" id="deliveryLocationStatus" role="status" aria-live="polite">Enter a PIN code to verify and save your postal location.</p>
+
+        </form>
+
+    </dialog>
+
+
+
+    <!-- Page Hero -->
+
+    <section class="page-hero">
+
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80')"></div>
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="container page-hero-content">
+
+            <span class="section-tag animate-on-scroll">Get In Touch</span>
+
+            <h1 class="page-hero-title animate-on-scroll">Contact <span class="accent">Us</span></h1>
+
+            <p class="page-hero-subtitle animate-on-scroll">Have a question, suggestion or just want to say hi? We'd love to hear from you!</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Contact Section -->
+
+    <section class="contact-section">
+
+        <div class="container">
+
+            <div class="contact-grid">
+
+                <!-- Contact Info -->
+
+                <div class="contact-info animate-on-scroll">
+
+                    <h2 class="contact-info-title">Let's <span class="accent">Talk</span></h2>
+
+                    <p class="contact-info-desc">Whether you have a question about our service, need help with an order, or want to partner with us — our team is ready to help.</p>
+
+
+
+                    <div class="contact-cards">
+
+                        <div class="contact-card">
+
+                            <div class="contact-card-icon">📍</div>
+
+                            <div>
+
+                                <h4>Visit Us</h4>
+
+                                <p>Batala, Punjab, India</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="contact-card">
+
+                            <div class="contact-card-icon">📞</div>
+
+                            <div>
+
+                                <h4>Call Us</h4>
+
+                                <p>+91 62835 56930<br>Mon — Sat, 9am — 10pm</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="contact-card">
+
+                            <div class="contact-card-icon">✉️</div>
+
+                            <div>
+
+                                <h4>Email Us</h4>
+
+                                <p>hello@hungriee.in<br>support@hungriee.in</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="contact-socials">
+
+                        <span>Follow us:</span>
+
+                        <div class="footer-socials">
+
+                            <a href="#" class="social-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+
+                            <a href="#" class="social-link" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+
+                            <a href="#" class="social-link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                                <a href="https://github.com/ar2hh" class="social-link" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.06c-3.1.68-3.76-1.32-3.76-1.32-.5-1.3-1.23-1.65-1.23-1.65-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.71 2.62 1.22 3.26.93.1-.72.39-1.22.71-1.5-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.23-5.1 5.51.4.35.75 1.03.75 2.08V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/></svg>
+                                </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Contact Form -->
+
+                <div class="contact-form-wrapper animate-on-scroll" data-delay="200">
+
+                    <form class="contact-form" id="contactForm">
+
+                        <h3 class="form-title">Send us a Message</h3>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="contactName">Full Name</label>
+
+                                <input type="text" id="contactName" placeholder="Enter your name" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="contactEmail">Email Address</label>
+
+                                <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="contactPhone">Phone Number</label>
+
+                            <input type="tel" id="contactPhone" placeholder="+91 XXXXX XXXXX">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label id="contactSubjectLabel" for="contactSubjectMenu">Subject</label>
+
+                            <select id="contactSubject" class="contact-subject-native" tabindex="-1" aria-hidden="true">
+
+                                <option value="">Select a subject</option>
+
+                                <option value="order">Order Issue</option>
+
+                                <option value="feedback">Feedback</option>
+
+                                <option value="partnership">Partnership</option>
+
+                                <option value="careers">Careers</option>
+
+                                <option value="other">Other</option>
+
+                            </select>
+
+                            <div class="contact-subject-dropdown" id="contactSubjectDropdown">
+
+                                <button class="contact-subject-trigger" id="contactSubjectMenu" type="button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="contactSubjectLabel contactSubjectValue">
+
+                                    <span id="contactSubjectValue">Select a subject</span>
+
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+
+                                </button>
+
+                                <div class="contact-subject-options" role="listbox" aria-labelledby="contactSubjectLabel" hidden>
+
+                                    <button type="button" role="option" data-value="" aria-selected="true">Select a subject</button>
+
+                                    <button type="button" role="option" data-value="order" aria-selected="false">Order Issue</button>
+
+                                    <button type="button" role="option" data-value="feedback" aria-selected="false">Feedback</button>
+
+                                    <button type="button" role="option" data-value="partnership" aria-selected="false">Partnership</button>
+
+                                    <button type="button" role="option" data-value="careers" aria-selected="false">Careers</button>
+
+                                    <button type="button" role="option" data-value="other" aria-selected="false">Other</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="contactMessage">Message</label>
+
+                            <textarea id="contactMessage" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn-primary form-submit-btn">
+
+                            <span>Send Message</span>
+
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+<!-- Footer -->
+
+    <footer class="footer" id="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand">
+
+                    <a href="/" class="nav-logo"><img class="logo-icon" src="images/hungriee-mark.svg" alt=""><span class="logo-text">Hungr<span class="accent">iee</span></span></a>
+
+                    <p class="footer-desc">Thoughtfully selected Indian food, delivered with care.</p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" class="social-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+
+                        <a href="#" class="social-link" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+
+                        <a href="#" class="social-link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                                <a href="https://github.com/ar2hh" class="social-link" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.06c-3.1.68-3.76-1.32-3.76-1.32-.5-1.3-1.23-1.65-1.23-1.65-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.71 2.62 1.22 3.26.93.1-.72.39-1.22.71-1.5-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.23-5.1 5.51.4.35.75 1.03.75 2.08V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/></svg>
+                                </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-links-group">
+
+                    <h4 class="footer-heading">Quick Links</h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="/">Home</a></li>
+
+                        <li><a href="/menu">Menu</a></li>
+
+                        <li><a href="/contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-links-group">
+
+                    <h4 class="footer-heading">Categories</h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="/menu?filter=biryani">Biryani</a></li>
+
+                        <li><a href="/menu?filter=curry">Curries</a></li>
+
+                        <li><a href="/menu?filter=tandoori">Tandoori</a></li>
+
+                        <li><a href="/menu?filter=street">Street Food</a></li>
+
+                        <li><a href="/menu?filter=dessert">Desserts</a></li>
+
+                        <li><a href="/menu?filter=drinks">Beverages</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-links-group">
+
+                    <h4 class="footer-heading">Contact Info</h4>
+
+                    <ul class="footer-links footer-contact">
+
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Batala, Punjab, India</li>
+
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 62835 56930</li>
+
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@hungriee.in</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>&copy; 2026 Hungriee. All rights reserved.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Cart Sidebar -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header"><h3>Your Cart <span class="cart-header-count" id="cartHeaderCount">(0)</span></h3><button class="cart-close" id="cartClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+
+        <div class="cart-body" id="cartBody"><div class="cart-empty" id="cartEmpty"><span class="cart-empty-icon">🛒</span><p>Your cart is empty</p><a href="/menu" class="btn-primary btn-sm">Browse Menu</a></div><div class="cart-items" id="cartItems"></div></div>
+
+        <div class="cart-footer" id="cartFooter" style="display: none;"><div class="cart-summary"><div class="cart-summary-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div><div class="cart-summary-row"><span>Delivery Fee</span><span id="cartDelivery">₹40</span></div><div class="cart-summary-row cart-total"><span>Total</span><span id="cartTotal">₹0</span></div></div><button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button></div>
+
+    </div>
+
+
+
+    <button class="back-to-top" id="backToTop"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg></button>
+
+
+
+    <script src="script.js?v=20261014-current-location-1"></script>
+
+    <script>
+
+        // Contact form handling
+
+        const contactForm = document.getElementById('contactForm');
+
+        const subjectSelect = document.getElementById('contactSubject');
+
+        const subjectDropdown = document.getElementById('contactSubjectDropdown');
+
+        const subjectTrigger = document.getElementById('contactSubjectMenu');
+
+        const subjectOptions = subjectDropdown?.querySelector('.contact-subject-options');
+
+        const subjectValue = document.getElementById('contactSubjectValue');
+
+
+
+        if (subjectSelect && subjectDropdown && subjectTrigger && subjectOptions && subjectValue) {
+
+            const closeSubjectDropdown = () => {
+
+                subjectOptions.hidden = true;
+
+                subjectTrigger.setAttribute('aria-expanded', 'false');
+
+            };
+
+
+
+            subjectTrigger.addEventListener('click', () => {
+
+                const isOpen = !subjectOptions.hidden;
+
+                subjectOptions.hidden = isOpen;
+
+                subjectTrigger.setAttribute('aria-expanded', String(!isOpen));
+
+            });
+
+
+
+            subjectOptions.addEventListener('click', event => {
+
+                const option = event.target.closest('[role="option"]');
+
+                if (!option) return;
+
+                subjectSelect.value = option.dataset.value || '';
+
+                subjectSelect.dispatchEvent(new Event('change', { bubbles: true }));
+
+                subjectValue.textContent = option.textContent;
+
+                subjectOptions.querySelectorAll('[role="option"]').forEach(item => {
+
+                    item.setAttribute('aria-selected', String(item === option));
+
+                });
+
+                closeSubjectDropdown();
+
+                subjectTrigger.focus();
+
+            });
+
+
+
+            document.addEventListener('click', event => {
+
+                if (!subjectDropdown.contains(event.target)) closeSubjectDropdown();
+
+            });
+
+
+
+            contactForm?.addEventListener('reset', () => {
+
+                subjectValue.textContent = 'Select a subject';
+
+                subjectOptions.querySelectorAll('[role="option"]').forEach((item, index) => {
+
+                    item.setAttribute('aria-selected', String(index === 0));
+
+                });
+
+            });
+
+        }
+
+
+
+        if (contactForm) {
+
+            contactForm.addEventListener('submit', (e) => {
+
+                e.preventDefault();
+
+
+
+                const btn = contactForm.querySelector('.form-submit-btn');
+
+                const originalHTML = btn.innerHTML;
+
+                btn.innerHTML = '<span>Sending...</span>';
+
+                btn.disabled = true;
+
+
+
+                setTimeout(() => {
+
+                    btn.innerHTML = '<span>✅ Message Sent!</span>';
+
+                    btn.style.background = 'linear-gradient(135deg, #2ecc71, #27ae60)';
+
+
+
+                    showToast('Message sent successfully! We\'ll get back to you soon.');
+
+                    contactForm.reset();
+
+
+
+                    setTimeout(() => {
+
+                        btn.innerHTML = originalHTML;
+
+                        btn.style.background = '';
+
+                        btn.disabled = false;
+
+                    }, 3000);
+
+                }, 1500);
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

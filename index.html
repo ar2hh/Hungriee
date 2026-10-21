@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungriee</title>
+    <meta name="description" content="Hungriee delivers authentic Indian food right to your doorstep. From biryani to butter chicken, order your favorites now!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20261016-autofill-1">
+    <link rel="icon" type="image/svg+xml" href="/images/hungriee-mark.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-core">
+                <img src="images/hungriee-mark.svg" alt="">
+            </div>
+            <span class="loader-wordmark">Hungr<span>iee</span></span>
+        </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">
+                <img class="logo-icon" src="images/hungriee-mark.svg" alt="">
+                <span class="logo-text">Hungr<span class="accent">iee</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/" class="nav-link active">Home</a></li>
+                <li><a href="/menu" class="nav-link">Menu</a></li>
+                <li><a href="/profile" class="nav-link">Account</a></li>
+            </ul>
+            <div class="nav-right">
+                <span class="location-summary" id="locationSummary" aria-live="polite"></span>
+                <button class="location-btn" id="locationBtn" type="button" aria-label="Enter delivery pincode" aria-controls="deliveryLocationDialog">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                        <circle cx="12" cy="10" r="2.5"/>
+                    </svg>
+                </button>
+                <button class="cart-btn" id="cartBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <a href="/profile" class="profile-nav-btn" id="profileNavBtn" aria-label="My Account" title="My Account">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                </a>
+                <button class="order-btn">Order Now</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <dialog class="delivery-location-dialog" id="deliveryLocationDialog">
+        <div class="delivery-location-dialog-header">
+            <div>
+                <span class="delivery-location-eyebrow">Delivery location</span>
+                <span class="delivery-location-current" id="currentDeliveryLocation">No location selected</span>
+            </div>
+        </div>
+        <form class="delivery-location-form" id="deliveryLocationForm">
+            <div class="delivery-location-controls">
+                <input id="deliveryPin" name="pinCode" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="6" pattern="[0-9]{6}" placeholder="6-digit PIN code" required>
+                <button class="delivery-check-btn" type="submit">Save</button>
+            </div>
+            <p class="delivery-location-status" id="deliveryLocationStatus" role="status" aria-live="polite">Enter a PIN code to verify and save your postal location.</p>
+        </form>
+    </dialog>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-elements">
+            <span class="floating-element fe-1" aria-hidden="true"></span>
+            <span class="floating-element fe-2" aria-hidden="true"></span>
+            <span class="floating-element fe-3" aria-hidden="true"></span>
+            <span class="floating-element fe-4" aria-hidden="true"></span>
+            <span class="floating-element fe-5" aria-hidden="true"></span>
+            <span class="floating-element fe-6" aria-hidden="true"></span>
+        </div>
+        <div class="hero-gradient-orb orb-1"></div>
+        <div class="hero-gradient-orb orb-2"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="title-line">Craving Something</span>
+                    <span class="title-line highlight">Delicious?</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    From sizzling tandoori to aromatic biryani, get authentic Indian flavors delivered to your doorstep in minutes.
+                </p>
+                <div class="hero-search animate-on-scroll">
+                    <div class="search-box">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                        </svg>
+                        <input type="text" placeholder="Search for biryani, butter chicken, dosa..." id="heroSearch">
+                        <button class="search-btn" type="button">Search</button>
+                    </div>
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="hero-stat">
+                        <span class="hero-stat-value"><span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span></span>
+                        <span class="stat-label">Restaurants</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value"><span class="stat-number" data-target="10000">0</span><span class="stat-suffix">+</span></span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value"><span class="stat-number" data-target="30">0</span><span class="stat-suffix"> min</span></span>
+                        <span class="stat-label">Avg. Delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="hero-image-wrapper">
+                    <img src="images/family_feast.jpg" alt="Indian dishes served together as a family feast" class="hero-image">
+                    <div class="hero-image-glow"></div>
+                </div>
+                <div class="floating-card fc-1">
+                    <img src="images/hyderabadi_biryani.jpg" alt="Hyderabadi biryani">
+                    <div class="fc-info">
+                        <span class="fc-name">Hyderabadi Biryani</span>
+                        <span class="fc-price">₹249</span>
+                    </div>
+                </div>
+                <div class="floating-card fc-2">
+                    <div class="fc-rating">
+                        <span class="fc-rating-icon" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="m12 3 2.78 5.63 6.22.9-4.5 4.39 1.06 6.2L12 17.2l-5.56 2.92 1.06-6.2L3 9.53l6.22-.9L12 3Z"/>
+                            </svg>
+                        </span>
+                        <span class="fc-rating-text">4.9</span>
+                    </div>
+                    <span class="fc-reviews">2.3k reviews</span>
+                </div>
+                <div class="floating-card fc-3">
+                    <div class="delivery-anim">
+                        <span class="delivery-icon" aria-hidden="true">
+                            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="5.5" cy="17.5" r="2.5"/>
+                                <circle cx="18.5" cy="17.5" r="2.5"/>
+                                <path d="M8 17.5h7l-2.2-6H9.5L8 17.5Zm4.8-6h3.1l2.4 3.1h-4.3M9.5 11.5 8 9.5H5.5M15 8.5h2"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <span class="fc-delivery">Delivered in 25 min</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="howItWorks">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Simple & Easy</span>
+                <h2 class="section-title">How It <span class="accent">Works</span></h2>
+                <p class="section-subtitle">Three easy steps to get your favorite food delivered</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card location-step-card animate-on-scroll" data-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="location-step-copy">
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon">📍</div>
+                        </div>
+                        <h3 class="step-title">Set Your Location</h3>
+                        <p class="step-desc">Enter your PIN code so we know where to deliver.</p>
+                        <a class="location-step-link" href="/menu#deliveryLocation">Set location <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="location-area-panel" aria-live="polite">
+                        <span class="location-area-label">YOUR DELIVERY AREA</span>
+                        <strong class="location-area-name" id="homeDeliveryArea">No area set yet</strong>
+                        <span class="location-area-pin" id="homeDeliveryPin">Add a PIN to see your area</span>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-card step-detail-card animate-on-scroll" data-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-detail-copy">
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon">🍽️</div>
+                        </div>
+                        <h3 class="step-title">Choose Your Dishes</h3>
+                        <p class="step-desc">Browse the menu and add your favorites to your cart.</p>
+                        <a class="location-step-link" href="/menu">Browse menu <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="dish-picks-panel" aria-label="Menu categories">
+                        <span class="location-area-label">PICK WHAT YOU LOVE</span>
+                        <span class="dish-pick-item"><span>🍛</span> Biryani</span>
+                        <span class="dish-pick-item"><span>🔥</span> Tandoori</span>
+                        <span class="dish-pick-item"><span>🍰</span> Desserts</span>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-card step-detail-card animate-on-scroll" data-delay="400">
+                    <div class="step-number">03</div>
+                    <div class="step-detail-copy">
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon">🚀</div>
+                        </div>
+                        <h3 class="step-title">Checkout & Track</h3>
+                        <p class="step-desc">Place your order and follow it as it arrives hot and fresh.</p>
+                    </div>
+                    <div class="delivery-progress-panel" aria-label="Order progress preview">
+                        <span class="location-area-label">YOUR ORDER JOURNEY</span>
+                        <div class="progress-preview-step is-complete"><span>✓</span> Confirmed</div>
+                        <div class="progress-preview-step is-active"><span>•••</span> Preparing</div>
+                        <div class="progress-preview-step"><span>3</span> On the way</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section class="popular-dishes" id="popularDishes">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Bestsellers</span>
+                <h2 class="section-title">Popular <span class="accent">Dishes</span></h2>
+                <p class="section-subtitle">The most loved dishes ordered by thousands every day</p>
+            </div>
+            <div class="dishes-filter animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="biryani">Biryani</button>
+                <button class="filter-btn" data-filter="curry">Curries</button>
+                <button class="filter-btn" data-filter="tandoori">Tandoori</button>
+                <button class="filter-btn" data-filter="street">Street Food</button>
+                <button class="filter-btn" data-filter="dessert">Desserts</button>
+                <button class="filter-btn" data-filter="drinks">Beverages</button>
+            </div>
+            <div class="dishes-grid" id="dishesGrid">
+                <!-- Dish cards injected via JS -->
+            </div>
+            <div class="dishes-cta animate-on-scroll">
+                <a href="/menu" class="btn-primary">View Full Menu →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner" id="statsBanner">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon">🏪</div>
+                    <div class="stat-value"><span class="counter" data-target="500">0</span><span class="stat-suffix">+</span></div>
+                    <div class="stat-name">Restaurant Partners</div>
+                </div>
+                <div class="stat-item animate-on-scroll" data-delay="100">
+                    <div class="stat-icon">🍛</div>
+                    <div class="stat-value"><span class="counter" data-target="1200">0</span><span class="stat-suffix">+</span></div>
+                    <div class="stat-name">Dishes Available</div>
+                </div>
+                <div class="stat-item animate-on-scroll" data-delay="200">
+                    <div class="stat-icon">😊</div>
+                    <div class="stat-value"><span class="counter" data-target="50000">0</span><span class="stat-suffix">+</span></div>
+                    <div class="stat-name">Happy Customers</div>
+                </div>
+                <div class="stat-item animate-on-scroll" data-delay="300">
+                    <div class="stat-icon">🏙️</div>
+                    <div class="stat-value"><span class="counter" data-target="25">0</span><span class="stat-suffix">+</span></div>
+                    <div class="stat-name">Cities Covered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers" id="specialOffers">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Limited Time</span>
+                <h2 class="section-title">Special <span class="accent">Offers</span></h2>
+                <p class="section-subtitle">Grab these deals before they're gone!</p>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card offer-large animate-on-scroll">
+                    <div class="offer-bg" style="background-image: url('images/family_feast.jpg')"></div>
+                    <div class="offer-overlay"></div>
+                    <div class="offer-content">
+                        <span class="offer-badge">50% OFF</span>
+                        <h3 class="offer-title">First Order Special</h3>
+                        <p class="offer-desc">Use code <strong>HUNGRIEE50</strong> on your first order</p>
+                        <button class="offer-btn">Order Now</button>
+                    </div>
+                </div>
+                <div class="offer-card animate-on-scroll" data-delay="200">
+                    <div class="offer-bg" style="background-image: url('images/butter_chicken.jpg')"></div>
+                    <div class="offer-overlay"></div>
+                    <div class="offer-content">
+                        <span class="offer-badge">FREE</span>
+                        <h3 class="offer-title">Free Delivery</h3>
+                        <p class="offer-desc">On orders above ₹299</p>
+                        <button class="offer-btn">Explore</button>
+                    </div>
+                </div>
+                <div class="offer-card animate-on-scroll" data-delay="400">
+                    <div class="offer-bg" style="background-image: url('images/family_feast.jpg')"></div>
+                    <div class="offer-overlay"></div>
+                    <div class="offer-content">
+                        <span class="offer-badge">COMBO</span>
+                        <h3 class="offer-title">Family Pack</h3>
+                        <p class="offer-desc">Feeds 4 starting ₹499</p>
+                        <button class="offer-btn">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Reviews</span>
+                <h2 class="section-title">What Our <span class="accent">Customers</span> Say</h2>
+                <p class="section-subtitle">Real reviews from real food lovers</p>
+            </div>
+            <div class="testimonials-slider animate-on-scroll">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"The biryani from Hungriee is absolutely incredible! Hot, fresh, and delivered in just 20 minutes. Best food delivery app in India!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma" class="author-img">
+                            <div class="author-info">
+                                <span class="author-name">Priya Sharma</span>
+                                <span class="author-location">Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"I order from Hungriee every weekend. The variety is amazing and the prices are very reasonable. Highly recommend the butter chicken!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul Verma" class="author-img">
+                            <div class="author-info">
+                                <span class="author-name">Rahul Verma</span>
+                                <span class="author-location">Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"As a working professional, Hungriee has been a lifesaver! Quick delivery, great taste, and the app is so easy to use. Love it!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Anita Patel" class="author-img">
+                            <div class="author-info">
+                                <span class="author-name">Anita Patel</span>
+                                <span class="author-location">Bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"The paneer tikka and garlic naan combo is to die for! Hungriee never disappoints with quality. My go-to for weekend dinners."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Vikram Singh" class="author-img">
+                            <div class="author-info">
+                                <span class="author-name">Vikram Singh</span>
+                                <span class="author-location">Jaipur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="testi-btn testi-prev" id="testiPrev">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <div class="testi-dots" id="testiDots"></div>
+                    <button class="testi-btn testi-next" id="testiNext">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download CTA -->
+    <section class="app-cta" id="appCta">
+        <div class="container">
+            <div class="app-cta-wrapper animate-on-scroll">
+                <div class="app-cta-content">
+                    <span class="section-tag">Get The App</span>
+                    <h2 class="app-cta-title">Download the <span class="accent">Hungriee</span> App</h2>
+                    <p class="app-cta-text">Get exclusive offers, real-time tracking, and faster ordering. Available on iOS and Android.</p>
+                    <div class="app-buttons">
+                        <button class="app-store-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            <div>
+                                <span class="app-store-label">Download on the</span>
+                                <span class="app-store-name">App Store</span>
+                            </div>
+                        </button>
+                        <button class="app-store-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.73c.44.45 1.14.49 1.63.1l16.14-9.34-3.42-3.43L3.18 23.73zm-.64-1.82V2.08c0-.48.2-.87.53-1.14L14.41 12.3 3.07 23.64c-.33-.27-.53-.66-.53-1.14v-.59zm18.6-11.27L18 8.9l3.74 3.74c.58.34.58 1.18 0 1.52L18 15.1l3.14-1.74c1.22-.71 1.22-2.48 0-3.18zM4.81.36L17.54 7.7l-3.42 3.43L4.18.27c.18-.06.4-.03.63.09z"/></svg>
+                            <div>
+                                <span class="app-store-label">Get it on</span>
+                                <span class="app-store-name">Google Play</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-cta-visual">
+                    <div class="phone-mockup">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Hungriee App Preview" class="phone-screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="nav-logo">
+                        <img class="logo-icon" src="images/hungriee-mark.svg" alt="">
+                        <span class="logo-text">Hungr<span class="accent">iee</span></span>
+                    </a>
+                    <p class="footer-desc">Thoughtfully selected Indian food, delivered with care.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="/profile">Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="/menu?filter=biryani">Biryani</a></li>
+                        <li><a href="/menu?filter=curry">Curries</a></li>
+                        <li><a href="/menu?filter=tandoori">Tandoori</a></li>
+                        <li><a href="/menu?filter=street">Street Food</a></li>
+                        <li><a href="/menu?filter=dessert">Desserts</a></li>
+                        <li><a href="/menu?filter=drinks">Beverages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-links footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Batala, Punjab, India
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            +91 62835 56930
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            hello@hungriee.in
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hungriee. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart <span class="cart-header-count" id="cartHeaderCount">(0)</span></h3>
+            <button class="cart-close" id="cartClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <div class="cart-empty" id="cartEmpty">
+                <span class="cart-empty-icon">🛒</span>
+                <p>Your cart is empty</p>
+                <a href="/menu" class="btn-primary btn-sm">Browse Menu</a>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="cart-summary">
+                <div class="cart-summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">₹0</span>
+                </div>
+                <div class="cart-summary-row">
+                    <span>Delivery Fee</span>
+                    <span id="cartDelivery">₹40</span>
+                </div>
+                <div class="cart-summary-row cart-total">
+                    <span>Total</span>
+                    <span id="cartTotal">₹0</span>
+                </div>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js?v=20261019-textbee-otp-1"></script>
+</body>
+</html>
